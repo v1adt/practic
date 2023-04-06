@@ -1,0 +1,89 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: "Inter";
+    src: url("./font/Inter/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: "Azeret";
+    src: url("./font/Azeret_Mono/AzeretMono-Bold.ttf");
+}
+/*Сброс стилей и подготовка*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #e9e9e3;
+}
+/*Основная стилизация*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .menu__content {
+    padding-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+}
+.menu .menu__content .menu__option {
+    margin-right: 100px;
+}
+.menu .menu__content .menu__option .menu__h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6f6f64;
+    font-family: "Azeret";
+    margin-bottom: 18px;
+}
+.menu .menu__content .menu__option .menu__description {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    color: #6f6f64;
+    max-width: 560px;
+    margin-bottom: 75px;
+}
+.menu .menu__content .menu__option .menu__buttons {
+    max-width: 530px;
+}
+.menu .menu__content .menu__option .menu__buttons .buttons__item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #6f6f64;
+    border: 2px solid #6f6f64;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.menu .menu__content .menu__option .menu__buttons .buttons__item:hover {
+    cursor: pointer;
+}
+.menu .menu__content .menu__option .menu__buttons .buttons__item:last-child {
+    margin: 0;
+}
+.menu .menu__content .menu__option .menu__buttons .selected {
+    border: none;
+    background-color: #6f6f64;
+    color: #fff;
+}
+.menu .menu__content .menu__img img {
+    max-width: 600px;
+    max-height: 800px;
+}
